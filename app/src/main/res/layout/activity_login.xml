@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout tools:context=".LoginActivity"
+    android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:text="2021041034 하지민"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="아이디"
+                android:id="@+id/editTextID"/>
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="비밀번호"
+                android:id="@+id/editTextPassword"
+                android:inputType="textPassword"/>
+        </LinearLayout>
+        <Space
+            android:layout_height="0dp"
+            android:layout_width="20dp"/>
+        <Button
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:text="로그인"
+            android:id="@+id/btnLogin"/>
+    </LinearLayout>
+</LinearLayout>
